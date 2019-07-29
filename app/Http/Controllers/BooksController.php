@@ -34,7 +34,7 @@ class BooksController extends Controller
     /**
      * @return mixed
      */
-    public function validateRequest()
+    protected function validateRequest()
     {
         return request()->validate([
             'title' => 'required',
